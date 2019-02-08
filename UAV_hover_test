@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#osascript -e 'tell app "Terminal"
+#    do script "cd Desktop/MAVLinkSerializer;
+#    python vehicle_state.py --connect '/dev/ptyv6' --source-num 254"
+#end tell'
+
+#osascript -e 'tell app "Terminal"
+#    do script "cd Desktop/MAVLinkSerializer;
+#    python vehicle_state.py --connect '/dev/ptyv7' --source-num 255"
+#end tell'
+
+#osascript -e 'tell app "Terminal"
+#    do script "cd Desktop/MAVLinkSerializer;
+#    python multi_serial_test.py"
+#end tell'
+
+#osascript -e 'tell app "Terminal"
+#    do script "cd Desktop/MAVLinkSerializer;
+#    python multi_serial_test0.py"
+#end tell'
+
+osascript -e 'tell app "Terminal"
+    do script "cd Desktop/MAVLinkSerializer;
+    python multi_serial_test.py"
+end tell'
+
+osascript -e 'tell app "Terminal"
+    do script "cd Desktop/MAVLinkSerializer;
+    python test_initiate_onboard.py"
+end tell'
+
+#osascript -e 'tell app "Terminal"
+#    do script "cd Documents/GitHub/FireUAVs;
+#    dronekit-sitl copter-3.3 --instance 0"
+#end tell'
